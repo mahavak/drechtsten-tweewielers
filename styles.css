@@ -211,7 +211,7 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 65% 50%;
+  object-position: 28% 55%;
 }
 
 .hero-scrim {
@@ -219,8 +219,8 @@ a:hover {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(10, 10, 11, 0.28) 0%, rgba(10, 10, 11, 0.18) 32%, rgba(10, 10, 11, 0.92) 100%),
-    linear-gradient(90deg, rgba(10, 10, 11, 0.72) 0%, rgba(10, 10, 11, 0.15) 58%, transparent 100%);
+    linear-gradient(180deg, rgba(10, 10, 11, 0.12) 0%, rgba(10, 10, 11, 0.08) 38%, rgba(10, 10, 11, 0.78) 100%),
+    linear-gradient(90deg, rgba(10, 10, 11, 0.42) 0%, rgba(10, 10, 11, 0.12) 48%, transparent 78%);
 }
 
 .hero-copy {
@@ -323,24 +323,30 @@ a:hover {
   border: 0;
   padding: 0;
   margin: 0;
-  background: transparent;
+  background: #111;
   cursor: zoom-in;
   display: block;
   width: 100%;
+  line-height: 0;
 }
 
 .shot img {
   width: 100%;
-  height: 16rem;
+  height: auto;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
+.shot-portrait img {
+  aspect-ratio: 3 / 4;
+}
+
 .shot-hero img {
-  height: min(62vw, 28rem);
+  aspect-ratio: 16 / 10;
 }
 
 .shot-wide img {
-  height: min(52vw, 22rem);
+  aspect-ratio: 16 / 9;
 }
 
 .shot figcaption {
@@ -348,33 +354,24 @@ a:hover {
   font-size: 0.75rem;
   color: var(--muted);
   letter-spacing: 0.01em;
+  line-height: 1.4;
 }
 
 @media (min-width: 840px) {
   .gallery {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(11rem, auto);
+    grid-template-columns: repeat(6, 1fr);
     gap: 0.9rem;
   }
 
   .shot-hero {
-    grid-column: 1 / 3;
-    grid-row: span 2;
-  }
-
-  .shot-hero img,
-  .shot img,
-  .shot-wide img {
-    height: 100%;
-    min-height: 14rem;
-    flex: 1;
-  }
-
-  .shot {
-    min-height: 100%;
+    grid-column: span 4;
   }
 
   .shot-wide {
+    grid-column: span 4;
+  }
+
+  .shot:not(.shot-hero):not(.shot-wide) {
     grid-column: span 2;
   }
 }
