@@ -3,25 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brommer- en scooterreparatie Drechtsteden | Drechtsten Tweewielers</title>
-  <meta name="description" content="Onderhoud en reparatie van brommers en scooters in de Drechtsteden: Dordrecht, Zwijndrecht, Papendrecht en omgeving. App Joep via WhatsApp — geen formulier.">
+  <title>Brommer- en scooterreparatie Drechtsteden | Drechtstedenscooters</title>
+  <meta name="description" content="Onderhoud en reparatie van brommers en scooters in de Drechtsteden: Dordrecht, Zwijndrecht, Papendrecht, Hendrik-Ido-Ambacht, Alblasserdam en Sliedrecht. App Joep via WhatsApp.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.Drechtstentweewielers.nl/">
-  <meta property="og:title" content="Brommer- en scooterreparatie Drechtsteden | Drechtsten Tweewielers">
-  <meta property="og:description" content="Onderhoud en reparatie van brommers en scooters in de Drechtsteden: Dordrecht, Zwijndrecht, Papendrecht en omgeving. App Joep via WhatsApp — geen formulier.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="canonical" href="https://www.drechtstedenscooters.nl/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Brommer- en scooterreparatie Drechtsteden | Drechtstedenscooters">
+  <meta property="og:description" content="Onderhoud en reparatie van brommers en scooters in de Drechtsteden. App Joep via WhatsApp — geen formulier.">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.Drechtstentweewielers.nl/">
-  <meta property="og:site_name" content="Drechtsten Tweewielers">
+  <meta property="og:url" content="https://www.drechtstedenscooters.nl/">
+  <meta property="og:site_name" content="Drechtstedenscooters">
+  <meta property="og:image" content="https://www.drechtstedenscooters.nl/public/photos/scooter-gracht.jpg">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Drechtsten Tweewielers",
-    "url": "https://www.Drechtstentweewielers.nl/",
-    "areaServed": "Drechtsteden",
-    "telephone": "+31619778406"
+    "name": "Drechtstedenscooters",
+    "url": "https://www.drechtstedenscooters.nl/",
+    "telephone": "+31619778406",
+    "image": "https://www.drechtstedenscooters.nl/public/photos/scooter-gracht.jpg",
+    "description": "Onderhoud en reparatie van brommers en scooters in de Drechtsteden.",
+    "areaServed": [
+      {"@type": "AdministrativeArea", "name": "Drechtsteden"},
+      {"@type": "City", "name": "Dordrecht"},
+      {"@type": "City", "name": "Zwijndrecht"},
+      {"@type": "City", "name": "Papendrecht"},
+      {"@type": "City", "name": "Hendrik-Ido-Ambacht"},
+      {"@type": "City", "name": "Alblasserdam"},
+      {"@type": "City", "name": "Sliedrecht"}
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+31619778406",
+      "contactType": "customer service",
+      "availableLanguage": "nl"
+    }
   }
   </script>
 </head>
@@ -31,10 +50,15 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#home">
-        <span class="brand-mark" aria-hidden="true">⚙</span>
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <circle cx="9.5" cy="21" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="22.5" cy="21" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M13.6 21h5M11.2 14.2h7.4l3.2 4.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="18.4" cy="12.4" r="1.35" fill="currentColor"/>
+        </svg>
         <span class="brand-text">
-          <strong>Drechtsten Tweewielers</strong>
-          <span class="brand-host">www.Drechtstentweewielers.nl</span>
+          <strong>Drechtstedenscooters</strong>
+          <span class="brand-host">drechtstedenscooters.nl</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hoofdmenu">
@@ -42,7 +66,7 @@
       </button>
       <nav id="hoofdmenu" class="nav" aria-label="Hoofdnavigatie">
         <a href="#home">Home</a>
-        <a href="#scooter">Scooter</a>
+        <a href="#fotos">Foto’s</a>
         <a href="#diensten">Diensten</a>
         <a href="#werkgebied">Werkgebied</a>
         <a href="#contact">Contact</a>
@@ -53,67 +77,164 @@
 
   <main id="inhoud">
     <section id="home" class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Brommer · scooter · tweewieler</p>
-          <h1>Reparatie en onderhoud in de Drechtsteden</h1>
-          <p class="lede">
-            Joep helpt je verder als je brommer, scooter of andere tweewieler onderhoud of een reparatie nodig heeft.
-            Geen loket, geen wachtrij op een website: gewoon even appen.
+      <div class="hero-media" aria-hidden="false">
+        <img
+          src="public/photos/scooter-gracht.jpg"
+          alt="Rode scooter langs een gracht in een Nederlandse straat (stockfoto, Pexels · Jesper)"
+          width="1600"
+          height="1069"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Onderhoud · reparatie · Drechtsteden</p>
+        <h1>Scooter of brommer die aandacht nodig heeft.</h1>
+        <p class="lede">
+          Joep doet onderhoud en reparatie van brommers en scooters in de Drechtsteden.
+          Geen loket, geen contactformulier: app hem.
+        </p>
+        <p class="hero-actions">
+          <a class="btn btn-wa"
+             href="https://wa.me/31619778406?text=Hoi%20Joep%2C%20ik%20heb%20een%20vraag%20over%20mijn%20scooter"
+             rel="noopener noreferrer">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02m-7.01 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29"/>
+            </svg>
+            WhatsApp Joep · 06 19778406
+          </a>
+          <a class="btn btn-ghost" href="#diensten">Wat Joep doet</a>
+        </p>
+        <p class="note">Alleen WhatsApp: 06&nbsp;19778406 · +31 6 19778406</p>
+      </div>
+    </section>
+
+    <section id="fotos" class="gallery-section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Sfeerbeelden</p>
+          <h2>Scooters, straat, werkbank.</h2>
+          <p class="section-intro">
+            Foto’s van scooters, gereedschap en Nederlandse straten.
+            Stockfoto’s — geen foto’s van Joep, geen voorraad, geen AI-gezichten.
           </p>
-          <p class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/31619778406?text=Hoi%20Joep%2C%20ik%20heb%20een%20vraag%20over%20mijn%20tweewieler">WhatsApp Joep</a>
-            <a class="btn btn-ghost" href="#diensten">Wat ik doe</a>
-          </p>
-          <p class="note">Alleen WhatsApp: 06&nbsp;19778406</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot shot-hero">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-geel.jpg" alt="Gele Vespa op de standaard (stockfoto, Unsplash · Ahmet Rüzgar)" width="1600" height="1067">
+            </button>
+            <figcaption>Gele Vespa · Ahmet Rüzgar / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-detail.jpg" alt="Detail van een gele Vespa (stockfoto, Unsplash · zero take)" width="1800" height="2700">
+            </button>
+            <figcaption>Vespa-detail · zero take / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-blauw.jpg" alt="Lichtblauwe Vespa in een werkplaats (stockfoto, Pexels · Labskiii)" width="1600" height="2844">
+            </button>
+            <figcaption>Vespa in de garage · Labskiii / Pexels</figcaption>
+          </figure>
+
+          <figure class="shot shot-wide">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/werkplaats.jpg" alt="Motorfiets op een krik in een donkere werkplaats (stockfoto, Unsplash · Kenny Letsoin)" width="1600" height="2133">
+            </button>
+            <figcaption>Werkplaats · Kenny Letsoin / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-lx.jpg" alt="Geel-oranje Vespa voor een stalen raam (stockfoto, Unsplash · Mehdi Pezhvak)" width="1600" height="2845">
+            </button>
+            <figcaption>Vespa LX · Mehdi Pezhvak / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/tangenset.jpg" alt="Tangenset in een rode rek in een werkplaats (stockfoto, Unsplash · NeONBRAND)" width="1600" height="1067">
+            </button>
+            <figcaption>Gereedschap · NeONBRAND / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/sleutelwand.jpg" alt="Wand met steeksleutels in een werkplaats (stockfoto, Pexels · Pixabay)" width="1600" height="1066">
+            </button>
+            <figcaption>Sleutelwand · Pixabay / Pexels</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/werkbank.jpg" alt="Steeksleutels en bouten op een werkbank (stockfoto, Pexels · Elena Kravets)" width="1600" height="2842">
+            </button>
+            <figcaption>Werkbank · Elena Kravets / Pexels</figcaption>
+          </figure>
+
+          <figure class="shot shot-wide">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/nl-gracht.jpg" alt="Nederlandse gracht met fietsen op een brug (stockfoto, Unsplash · Denis)" width="1600" height="2400">
+            </button>
+            <figcaption>Nederlandse straat · Denis / Unsplash</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section id="scooter" class="scooter-band">
-      <div class="wrap">
-        <h2>De scooter</h2>
-        <p class="section-intro">Een 3D-voorbeeld van een scooter — draaiend, puur ter sfeer.</p>
-      </div>
-      <figure class="scooter-figure" aria-label="3D-weergave van een scooter (decoratief)">
-        <canvas id="scooter-canvas" role="img" aria-label="3D-weergave van een scooter (decoratief)"></canvas>
-      </figure>
-      <p id="scooter-fallback" hidden>3D scooter kon niet laden.</p>
-    </section>
-
     <section id="diensten" class="section">
       <div class="wrap">
-        <h2>Diensten</h2>
-        <p class="section-intro">
-          Werkplaats-werk voor tweewielers. Geen prijslijst op deze pagina — stuur een bericht met wat er speelt,
-          dan kijken we wat er nodig is.
-        </p>
-        <ul class="cards">
-          <li class="card">
-            <h3>Onderhoud</h3>
-            <p>Periodieke check, afstelling, slijtage bekijken. Bedoeld om je brommer of scooter soepel te houden.</p>
+        <div class="section-head">
+          <p class="eyebrow">Werk</p>
+          <h2>Onderhoud en reparatie.</h2>
+          <p class="section-intro">
+            Werkplaats-werk voor brommer en scooter. Geen prijslijst op deze site —
+            beschrijf wat er speelt, dan kijken we wat nodig is.
+          </p>
+        </div>
+        <ol class="jobs">
+          <li>
+            <span class="job-index" aria-hidden="true">01</span>
+            <div>
+              <h3>Onderhoud</h3>
+              <p>Periodieke check, afstelling, slijtage bekijken. Bedoeld om je brommer of scooter soepel te houden.</p>
+            </div>
           </li>
-          <li class="card">
-            <h3>Reparatie</h3>
-            <p>Start niet, trekt slecht, vreemd geluid, lekke band, elektrische of mechanische klachten. Beschrijf het, dan plannen we het.</p>
+          <li>
+            <span class="job-index" aria-hidden="true">02</span>
+            <div>
+              <h3>Reparatie</h3>
+              <p>Start niet, trekt slecht, vreemd geluid, lekke band, elektrische of mechanische klachten. Beschrijf het, dan plannen we het.</p>
+            </div>
           </li>
-          <li class="card">
-            <h3>Keuring / APK-achtig</h3>
-            <p>
-              Hulp bij het op orde krijgen van je voertuig voor een keuring.
-              Dit is geen officiële keuringsinstantie en geen certificaat — wel praktisch werk zodat je voorbereid bent.
-            </p>
+          <li>
+            <span class="job-index" aria-hidden="true">03</span>
+            <div>
+              <h3>Klaarzetten voor keuring</h3>
+              <p>
+                Hulp bij het op orde krijgen van je voertuig voor een keuring.
+                Dit is geen officiële keuringsinstantie en geen certificaat — wel praktisch werk zodat je voorbereid bent.
+              </p>
+            </div>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
 
     <section id="werkgebied" class="section section-alt">
       <div class="wrap">
-        <h2>Werkgebied</h2>
-        <p class="section-intro">
-          Gericht op de Drechtsteden en de buurt. Twijfel je of het uitkomt? App even.
-        </p>
+        <div class="section-head">
+          <p class="eyebrow">Drechtsteden</p>
+          <h2>Dichtbij, in de regio.</h2>
+          <p class="section-intro">
+            Gericht op de Drechtsteden. Twijfel je of het uitkomt? App even.
+          </p>
+        </div>
         <ul class="places">
           <li>Dordrecht</li>
           <li>Zwijndrecht</li>
@@ -122,29 +243,38 @@
           <li>Alblasserdam</li>
           <li>Sliedrecht</li>
         </ul>
-        <p>Ook in de buurt van deze kernen is vaak mogelijk.</p>
+        <p class="note">Ook in de buurt van deze kernen is vaak mogelijk.</p>
       </div>
     </section>
 
     <section id="over" class="section">
-      <div class="wrap narrow">
-        <h2>Over Joep</h2>
-        <p>
-          Joep doet brommer-, scooter- en tweewielerwerk voor mensen in de Drechtsteden.
-          Kort en duidelijk: je belt niet een callcenter, je appt de man die het werk doet.
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Monteur</p>
+          <h2>Joep.</h2>
+        </div>
+        <p class="lede">
+          Joep doet brommer- en scooterwerk voor mensen in de Drechtsteden.
+          Kort: je belt geen callcenter, je appt de man die het werk doet.
         </p>
       </div>
     </section>
 
     <section id="contact" class="section section-contact">
-      <div class="wrap narrow">
-        <h2>Contact</h2>
-        <p>
-          Alleen via WhatsApp. Geen e-mail, geen contactformulier, geen telefoonlink op deze site.
-        </p>
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h2>Alleen WhatsApp.</h2>
+        <p class="lede">Geen e-mail, geen contactformulier, geen adres op deze site.</p>
         <p class="wa-number">06 19778406</p>
         <p>
-          <a class="btn btn-primary btn-lg" href="https://wa.me/31619778406?text=Hoi%20Joep%2C%20ik%20wil%20iets%20afspreken%20over%20onderhoud%20of%20reparatie">Stuur een WhatsApp</a>
+          <a class="btn btn-wa btn-lg"
+             href="https://wa.me/31619778406?text=Hoi%20Joep%2C%20ik%20heb%20een%20vraag%20over%20mijn%20scooter"
+             rel="noopener noreferrer">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02m-7.01 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29"/>
+            </svg>
+            WhatsApp Joep · 06 19778406
+          </a>
         </p>
         <p class="note">Opent WhatsApp naar +31 6 19778406</p>
       </div>
@@ -152,22 +282,43 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p>
-        <strong>Drechtsten Tweewielers</strong>
-        <span class="sep">·</span>
-        <span class="brand-host">www.Drechtstentweewielers.nl</span>
-      </p>
-      <p>
-        <a href="https://wa.me/31619778406">WhatsApp 06 19778406</a>
-        <span class="sep">·</span>
-        <a href="privacy.html">Privacy</a>
-      </p>
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Drechtstedenscooters</p>
+        <p><a href="https://www.drechtstedenscooters.nl/">www.drechtstedenscooters.nl</a></p>
+        <p>
+          <a class="btn btn-wa btn-footer"
+             href="https://wa.me/31619778406?text=Hoi%20Joep%2C%20ik%20heb%20een%20vraag%20over%20mijn%20scooter"
+             rel="noopener noreferrer">WhatsApp Joep · 06 19778406</a>
+        </p>
+      </div>
+      <div>
+        <p><a href="privacy.html">Privacy</a></p>
+        <p class="credits-label">Sfeerbeelden (stock, geen foto’s van Joep)</p>
+        <ul class="credits">
+          <li>Jesper — Pexels</li>
+          <li>Ahmet Rüzgar, zero take, Mehdi Pezhvak, Kenny Letsoin, NeONBRAND, Denis — Unsplash</li>
+          <li>Labskiii, Pixabay, Elena Kravets — Pexels</li>
+        </ul>
+      </div>
     </div>
   </footer>
 
+  <a class="fab"
+     href="https://wa.me/31619778406?text=Hoi%20Joep%2C%20ik%20heb%20een%20vraag%20over%20mijn%20scooter"
+     rel="noopener noreferrer">
+    <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02m-7.01 15.24h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.7 8.23-8.24 8.23m4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29"/>
+    </svg>
+    WhatsApp Joep · 06 19778406
+  </a>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Vergrote foto">
+    <button type="button" class="lightbox-close" data-lightbox-close>Sluiten</button>
+    <img alt="" width="1600" height="1067">
+    <p class="lightbox-cap"></p>
+  </dialog>
+
   <script src="nav.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-  <script src="scooter-hero.js"></script>
 </body>
 </html>
