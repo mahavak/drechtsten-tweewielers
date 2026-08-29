@@ -626,6 +626,35 @@ a:hover {
   gap: 0.45rem;
 }
 
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.4rem 0 0;
+  display: grid;
+  gap: 1rem;
+  max-width: 42rem;
+}
+
+.post-list li {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+}
+
+.post-list a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.post-list a:hover {
+  color: var(--accent);
+}
+
+.post-list p {
+  margin: 0.35rem 0 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
