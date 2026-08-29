@@ -1,11 +1,17 @@
-# Drechtsten Tweewielers
+# Drechtstedenscooters
 
-Statische preview (niet live op het domein).
+Statische site voor [www.drechtstedenscooters.nl](https://www.drechtstedenscooters.nl/).
+Niet vanuit deze repo live gezet.
 
 ## Openen
 
 1. Clone of download deze repo.
-2. Open `index.html` in een browser (dubbelklik). Eenmaal netwerk nodig voor Three.js (jsDelivr).
+2. Open `index.html` in een browser, of serveer de map lokaal (`python3 -m http.server`).
 3. Privacy: `privacy.html`.
 
-Contact op de site: alleen WhatsApp. Geen Hetzner-deploy vanuit deze repo.
+Contact: alleen WhatsApp (`06 19778406`). Geen contactformulier.
+
+## Foto’s
+
+Twee stockfoto’s in `public/photos/`: werkplaats (hero) en één scooter verderop.
+Credits: `public/photos/CREDITS.md`. Geen foto’s van Joep. Geen 3D.
