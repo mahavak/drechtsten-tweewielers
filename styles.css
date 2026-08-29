@@ -292,33 +292,6 @@ a:hover {
   margin: 0.8rem 0 0;
 }
 
-.scooter-section {
-  padding-block: 4rem 3rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.solo-shot {
-  margin: 0;
-  background: #070708;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.solo-shot img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  object-position: 50% 60%;
-}
-
-.solo-shot figcaption {
-  padding: 0.65rem 0.85rem 0.8rem;
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-
 .jobs {
   list-style: none;
   margin: 0;

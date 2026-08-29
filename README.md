@@ -13,5 +13,5 @@ Contact: alleen WhatsApp (`06 19778406`). Geen contactformulier.
 
 ## Foto’s
 
-Twee foto’s in `public/photos/`: Joep’s werkplaatsfoto als hero, en één stock-scooter verderop.
+Eén foto in `public/photos/`: werkplaatsfoto als hero.
 Credits: `public/photos/CREDITS.md`. Geen 3D.
