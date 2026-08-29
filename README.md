@@ -13,5 +13,5 @@ Contact: alleen WhatsApp (`06 19778406`). Geen contactformulier.
 
 ## Foto’s
 
-Sfeerbeelden in `public/photos/` zijn stock (Unsplash / Pexels). Credits: `public/photos/CREDITS.md`.
-Geen foto’s van Joep.
+Twee stockfoto’s in `public/photos/`: werkplaats (hero) en één scooter verderop.
+Credits: `public/photos/CREDITS.md`. Geen foto’s van Joep. Geen 3D.
