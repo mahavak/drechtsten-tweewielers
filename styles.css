@@ -31,21 +31,18 @@ html {
   color-scheme: dark;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   margin: 0;
   font-family: "Söhne", "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
   background: var(--bg);
   color: var(--ink);
   line-height: 1.55;
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
+  min-height: 0;
   padding-bottom: calc(var(--fab-space) + env(safe-area-inset-bottom, 0px));
-}
-
-#inhoud {
-  flex: 1 0 auto;
 }
 
 .page-home,
@@ -399,7 +396,7 @@ a:hover {
   max-width: var(--measure);
 }
 
-@media (min-width: 960px) {
+@media (min-width: 840px) {
   .jobs {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.1rem;
@@ -664,7 +661,16 @@ a:hover {
 }
 
 .article-hub {
-  padding-block: 1.8rem 1.4rem;
+  padding-block: 1.5rem 0.8rem;
+}
+
+.article-hub .lede {
+  max-width: none;
+}
+
+.article-hub + .site-footer,
+.page-hub .site-footer {
+  margin-top: 0;
 }
 
 .article h1 {
