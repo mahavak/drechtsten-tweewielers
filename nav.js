@@ -44,17 +44,4 @@
       el.classList.add("is-in");
     });
   }
-
-  var form = document.querySelector("#contact-form");
-  if (form) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      form.classList.add("is-success");
-      var ok = form.querySelector(".form-success");
-      if (ok) {
-        ok.hidden = false;
-        ok.focus && ok.focus();
-      }
-    });
-  }
 })();
