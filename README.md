@@ -13,5 +13,6 @@ Contact: alleen WhatsApp (`06 19778406`). Geen contactformulier.
 
 ## Foto’s
 
-Eén foto in `public/photos/`: werkplaatsfoto als hero.
+Hero: `public/photos/werkplaats.jpg`.
+Homepage-galerij: werkbank, sleutelwand, tangenset, Vespa’s, straatbeelden.
 Credits: `public/photos/CREDITS.md`. Geen 3D.
