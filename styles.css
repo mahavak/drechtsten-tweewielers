@@ -209,7 +209,7 @@ a:hover {
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
-  max-height: min(42svh, 22rem);
+  max-height: min(34svh, 16.5rem);
   overflow: hidden;
 }
 
@@ -225,7 +225,7 @@ a:hover {
 }
 
 .hero-copy {
-  padding-block: 1.35rem 1.7rem;
+  padding-block: 1.05rem 1.25rem;
   background: var(--bg);
 }
 
@@ -307,7 +307,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  margin: 1.6rem 0 0.7rem;
+  margin: 1.05rem 0 0.45rem;
+}
+
+@media (min-width: 840px) {
+  .hero-actions {
+    margin: 1.6rem 0 0.7rem;
+  }
 }
 
 .note {
