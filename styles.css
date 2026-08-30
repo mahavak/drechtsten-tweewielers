@@ -213,6 +213,19 @@ a:hover {
   height: 1rem;
 }
 
+.header-wa .wa-short {
+  display: none;
+}
+
+.header-wa,
+.nav-toggle {
+  flex-shrink: 0;
+}
+
+.brand {
+  min-width: 0;
+}
+
 .brand-text strong {
   font-weight: 800;
 }
@@ -254,6 +267,22 @@ a:hover {
 
 .nav-toggle-bars::after {
   top: 6px;
+}
+
+@media (max-width: 979px) {
+  .header-wa .wa-long,
+  .header-wa-label {
+    display: none;
+  }
+
+  .header-wa .wa-short {
+    display: inline;
+  }
+
+  .header-wa:has(.wa-icon):not(:has(.wa-short)) {
+    width: 2.5rem;
+    padding: 0;
+  }
 }
 
 @media (min-width: 980px) {
