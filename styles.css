@@ -14,7 +14,8 @@
   --wa-ink: #052e16;
   --focus: #7ec8ff;
   --radius: 14px;
-  --max: 72rem;
+  --max: 78rem;
+  --measure: 64rem;
   --header-h: 4.25rem;
   --fab-space: 5.5rem;
 }
@@ -30,14 +31,27 @@ html {
   color-scheme: dark;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   margin: 0;
   font-family: "Söhne", "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
   background: var(--bg);
   color: var(--ink);
   line-height: 1.55;
-  min-height: 100vh;
+  min-height: 0;
   padding-bottom: calc(var(--fab-space) + env(safe-area-inset-bottom, 0px));
+}
+
+.page-home,
+.page-hub {
+  padding-bottom: 0;
+}
+
+.page-hub .fab {
+  display: none;
 }
 
 img {
@@ -139,7 +153,8 @@ a:hover {
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 0.45rem 0.75rem;
+  padding: 0.55rem 0.9rem;
+  min-height: 2.75rem;
   font: inherit;
   cursor: pointer;
 }
@@ -194,37 +209,69 @@ a:hover {
 
 .hero {
   position: relative;
-  min-height: min(92svh, 52rem);
-  display: grid;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
   isolation: isolate;
   overflow: hidden;
 }
 
 .hero-media {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: min(34svh, 16.5rem);
+  overflow: hidden;
 }
 
 .hero-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 42%;
+  object-position: 50% 38%;
 }
 
 .hero-scrim {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(180deg, rgba(10, 10, 11, 0.12) 0%, rgba(10, 10, 11, 0.08) 38%, rgba(10, 10, 11, 0.78) 100%),
-    linear-gradient(90deg, rgba(10, 10, 11, 0.42) 0%, rgba(10, 10, 11, 0.12) 48%, transparent 78%);
+  display: none;
 }
 
 .hero-copy {
-  padding-block: 4.5rem 3.2rem;
+  padding-block: 1.05rem 1.25rem;
+  background: var(--bg);
+}
+
+@media (min-width: 840px) {
+  .hero {
+    min-height: min(92svh, 52rem);
+    display: grid;
+    align-items: end;
+  }
+
+  .hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    aspect-ratio: auto;
+    max-height: none;
+  }
+
+  .hero-media img {
+    object-position: 50% 42%;
+  }
+
+  .hero-scrim {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(10, 10, 11, 0.28) 0%, rgba(10, 10, 11, 0.18) 36%, rgba(10, 10, 11, 0.88) 100%),
+      linear-gradient(90deg, rgba(10, 10, 11, 0.62) 0%, rgba(10, 10, 11, 0.22) 52%, rgba(10, 10, 11, 0.08) 100%);
+  }
+
+  .hero-copy {
+    padding-block: 4.5rem 3.2rem;
+    background: transparent;
+  }
 }
 
 .eyebrow {
@@ -241,17 +288,28 @@ a:hover {
 .section h2,
 .split h2 {
   margin: 0;
-  font-size: clamp(2.15rem, 8vw, 5.4rem);
-  line-height: 0.95;
+  font-size: clamp(1.65rem, 7.2vw, 2.4rem);
+  line-height: 1.08;
   letter-spacing: -0.045em;
   font-weight: 750;
-  max-width: 14ch;
+  max-width: 18ch;
+}
+
+@media (min-width: 840px) {
+  .hero h1,
+  .section-head h2,
+  .section h2,
+  .split h2 {
+    font-size: clamp(2.4rem, 5.4vw, 4.4rem);
+    line-height: 0.96;
+    max-width: 20ch;
+  }
 }
 
 .lede {
-  max-width: 38rem;
+  max-width: var(--measure);
   color: var(--muted);
-  font-size: clamp(1.02rem, 2vw, 1.2rem);
+  font-size: clamp(1.02rem, 2vw, 1.25rem);
   margin: 1rem 0 0;
 }
 
@@ -259,7 +317,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  margin: 1.6rem 0 0.7rem;
+  margin: 1.05rem 0 0.45rem;
+}
+
+@media (min-width: 840px) {
+  .hero-actions {
+    margin: 1.6rem 0 0.7rem;
+  }
 }
 
 .note {
@@ -283,12 +347,12 @@ a:hover {
 .section-head h2,
 .section h2 {
   font-size: clamp(1.9rem, 5vw, 3.4rem);
-  max-width: 16ch;
+  max-width: 20ch;
 }
 
 .section-intro {
   color: var(--muted);
-  max-width: 40rem;
+  max-width: var(--measure);
   margin: 0.8rem 0 0;
 }
 
@@ -329,7 +393,32 @@ a:hover {
 .jobs p {
   margin: 0;
   color: var(--muted);
-  max-width: 42rem;
+  max-width: var(--measure);
+}
+
+@media (min-width: 840px) {
+  .jobs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+  }
+
+  .jobs li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: 1.2rem 1.15rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+  }
+
+  .jobs li:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .jobs p {
+    max-width: none;
+  }
 }
 
 .places {
@@ -419,6 +508,11 @@ a:hover {
   font-weight: 700;
   border: 2px solid transparent;
   letter-spacing: -0.02em;
+  min-height: 3rem;
+}
+
+.hero-actions .btn-wa {
+  min-width: min(100%, 16.5rem);
 }
 
 .btn-wa {
@@ -486,7 +580,7 @@ a:hover {
 .credits {
   margin: 0;
   padding-left: 1.1rem;
-  max-width: 36rem;
+  max-width: var(--measure);
 }
 
 .credits li {
@@ -550,7 +644,7 @@ a:hover {
 
 .prose p {
   color: var(--muted);
-  max-width: 42rem;
+  max-width: var(--measure);
 }
 
 .prose p:first-of-type {
@@ -566,12 +660,25 @@ a:hover {
   padding-block: 3.2rem 4rem;
 }
 
+.article-hub {
+  padding-block: 1.5rem 0.8rem;
+}
+
+.article-hub .lede {
+  max-width: none;
+}
+
+.article-hub + .site-footer,
+.page-hub .site-footer {
+  margin-top: 0;
+}
+
 .article h1 {
   margin: 0 0 0.8rem;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 3.2rem);
   letter-spacing: -0.04em;
   line-height: 1.05;
-  max-width: 18ch;
+  max-width: 22ch;
 }
 
 .article .lede {
@@ -587,7 +694,7 @@ a:hover {
 .article p,
 .article li {
   color: var(--muted);
-  max-width: 42rem;
+  max-width: var(--measure);
 }
 
 .article ul {
@@ -597,8 +704,19 @@ a:hover {
 .faq {
   display: grid;
   gap: 0.55rem;
-  max-width: 42rem;
+  max-width: var(--measure);
   margin-top: 0.8rem;
+}
+
+@media (min-width: 960px) {
+  .faq {
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+  }
+
+  .faq details:last-child {
+    grid-column: 1 / -1;
+  }
 }
 
 .faq details {
@@ -612,6 +730,9 @@ a:hover {
   cursor: pointer;
   font-weight: 700;
   letter-spacing: -0.02em;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
 }
 
 .faq details p {
@@ -629,17 +750,53 @@ a:hover {
 .post-list {
   list-style: none;
   padding: 0;
-  margin: 1.4rem 0 0;
+  margin: 1.1rem 0 0;
   display: grid;
-  gap: 1rem;
-  max-width: 42rem;
+  gap: 0.85rem;
+  max-width: none;
+}
+
+@media (min-width: 840px) {
+  .post-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
 .post-list li {
+  margin: 0;
+}
+
+.post-card {
+  display: block;
   background: var(--bg-card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 1rem 1.1rem;
+  padding: 1.05rem 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+  min-height: 4.5rem;
+}
+
+.post-card:hover {
+  color: inherit;
+  border-color: var(--accent);
+}
+
+.post-card strong {
+  display: block;
+  font-size: 1.12rem;
+  letter-spacing: -0.03em;
+}
+
+.post-card span {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--muted);
+}
+
+.post-card:hover strong {
+  color: var(--accent);
 }
 
 .post-list a {
