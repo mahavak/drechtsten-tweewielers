@@ -9,7 +9,7 @@ Niet vanuit deze repo live gezet.
 2. Open `index.html` in een browser, of serveer de map lokaal (`python3 -m http.server`).
 3. Privacy: `privacy.html`. Blog: `blog/`.
 
-Contact: WhatsApp `06 19778406` (`https://wa.me/31619778406`) of bellen (`tel:+31619778406`). Geen contactformulier.
+Contact: alleen WhatsApp `06 19778406` (`https://wa.me/31619778406`). Geen belknop, geen formulier.
 
 ## Foto’s
 
