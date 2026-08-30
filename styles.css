@@ -7,6 +7,8 @@
   --accent: #e85d04;
   --accent-2: #f48c06;
   --muted: #6b645a;
+  --wa: #25d366;
+  --wa-hover: #1ebe57;
   --radius: 18px;
   --nav-h: 76px;
   --max: 1180px;
@@ -181,6 +183,23 @@ h3 {
   color: var(--cream);
 }
 
+.btn-wa {
+  background: var(--wa);
+  color: #fff;
+  border-radius: 999px;
+}
+
+.btn-wa:hover {
+  background: var(--wa-hover);
+  color: #fff;
+}
+
+.wa-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+}
+
 /* Header */
 
 .site-header {
@@ -251,7 +270,10 @@ h3 {
 }
 
 .header-cta {
-  display: none;
+  display: inline-flex;
+  padding: 0.45rem 0.75rem;
+  min-height: 2.35rem;
+  font-size: 0.92rem;
 }
 
 .nav-toggle {
@@ -313,6 +335,17 @@ h3 {
   border-bottom: 1px solid rgba(250, 247, 240, 0.08);
 }
 
+@media (max-width: 520px) {
+  .logo-text {
+    font-size: 1.02rem;
+  }
+
+  .header-cta {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.8rem;
+  }
+}
+
 @media (min-width: 960px) {
   .nav-toggle {
     display: none;
@@ -329,9 +362,9 @@ h3 {
   }
 
   .header-cta {
-    display: inline-flex;
     padding: 0.55rem 1.05rem;
     min-height: 2.45rem;
+    font-size: 1.05rem;
   }
 }
 
