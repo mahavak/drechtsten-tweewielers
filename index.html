@@ -99,6 +99,7 @@
         <span class="brand-text"><strong>Drechtstedenscooters</strong></span>
       </a>
       <nav id="hoofdmenu" class="nav" aria-label="Hoofdnavigatie">
+        <a href="#fotos">Foto’s</a>
         <a href="#diensten">Diensten</a>
         <a href="#werkgebied">Werkgebied</a>
         <a href="blog/">Blog</a>
@@ -142,6 +143,91 @@
           height="2048"
           fetchpriority="high"
         >
+      </div>
+    </section>
+
+    <section id="fotos" class="section gallery-section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Foto’s</p>
+          <h2>Werkplaats, scooters, straat.</h2>
+          <p class="section-intro">
+            Beelden van de werkplaats, gereedschap en scooters.
+            Geen voorraad, geen prijslijst.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot shot-hero">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/werkbank.jpg" alt="Steeksleutels en bouten op een werkbank (stockfoto, Pexels · Elena Kravets)" width="1600" height="2842">
+            </button>
+            <figcaption>Werkbank · Elena Kravets / Pexels</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/sleutelwand.jpg" alt="Wand met steeksleutels in een werkplaats (stockfoto, Pexels · Pixabay)" width="1600" height="1066">
+            </button>
+            <figcaption>Sleutelwand · Pixabay / Pexels</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/tangenset.jpg" alt="Tangenset in een rode rek in een werkplaats (stockfoto, Unsplash · NeONBRAND)" width="1600" height="1067">
+            </button>
+            <figcaption>Gereedschap · NeONBRAND / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot shot-wide">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/werkplaats.jpg" alt="Derbi Senda 50 op een hydraulische brug in de werkplaats" width="1536" height="2048">
+            </button>
+            <figcaption>Werkplaats · Derbi Senda op de brug</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-geel.jpg" alt="Gele Vespa op de standaard (stockfoto, Unsplash · Ahmet Rüzgar)" width="1600" height="1067">
+            </button>
+            <figcaption>Gele Vespa · Ahmet Rüzgar / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-detail.jpg" alt="Detail van een gele Vespa (stockfoto, Unsplash · zero take)" width="1800" height="2700">
+            </button>
+            <figcaption>Vespa-detail · zero take / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-blauw.jpg" alt="Lichtblauwe Vespa in een werkplaats (stockfoto, Pexels · Labskiii)" width="1600" height="2844">
+            </button>
+            <figcaption>Vespa in de garage · Labskiii / Pexels</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/vespa-lx.jpg" alt="Geel-oranje Vespa voor een stalen raam (stockfoto, Unsplash · Mehdi Pezhvak)" width="1600" height="2845">
+            </button>
+            <figcaption>Vespa LX · Mehdi Pezhvak / Unsplash</figcaption>
+          </figure>
+
+          <figure class="shot shot-wide">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/scooter-gracht.jpg" alt="Rode scooter langs een gracht in een Nederlandse straat (stockfoto, Pexels · Jesper)" width="1600" height="1069">
+            </button>
+            <figcaption>Scooter langs de gracht · Jesper / Pexels</figcaption>
+          </figure>
+
+          <figure class="shot shot-wide">
+            <button type="button" class="shot-btn" data-lightbox>
+              <img src="public/photos/nl-gracht.jpg" alt="Nederlandse gracht met fietsen op een brug (stockfoto, Unsplash · Denis)" width="1600" height="2400">
+            </button>
+            <figcaption>Nederlandse straat · Denis / Unsplash</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -255,6 +341,12 @@
       <p><a href="privacy.html">Privacy</a></p>
     </div>
   </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Vergrote foto">
+    <button type="button" class="lightbox-close" data-lightbox-close>Sluiten</button>
+    <img alt="" width="1600" height="1067">
+    <p class="lightbox-cap"></p>
+  </dialog>
 
   <script src="nav.js"></script>
 </body>
